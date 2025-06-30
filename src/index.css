@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-cool-border;
+  }
+  body {
+    @apply bg-cool-bg text-cool-text font-sans;
+  }
+}
+
+@layer components {
+  .cool-card {
+    @apply bg-cool-card rounded-cool shadow-cool border border-cool-border;
+  }
+  
+  .cool-button {
+    @apply bg-cool-accent text-white px-6 py-3 rounded-cool font-medium transition-all duration-200 hover:shadow-cool-hover hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cool-accent focus:ring-opacity-50;
+  }
+  
+  .cool-button-secondary {
+    @apply bg-white text-cool-text border border-cool-border px-6 py-3 rounded-cool font-medium transition-all duration-200 hover:bg-gray-50 hover:shadow-cool-hover focus:outline-none focus:ring-2 focus:ring-cool-accent focus:ring-opacity-50;
+  }
+  
+  .cool-input {
+    @apply bg-white border border-cool-border rounded-cool px-4 py-3 text-cool-text transition-all duration-200 focus:border-cool-accent focus:outline-none focus:ring-2 focus:ring-cool-accent focus:ring-opacity-20;
+  }
+  
+  .cool-slider {
+    @apply w-full h-2 bg-gray-200 rounded-full appearance-none cursor-pointer transition-all duration-200;
+  }
+  
+  .cool-slider::-webkit-slider-thumb {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #a3bffa;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+  
+  .cool-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cool-slider::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #a3bffa;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+  
+  .cool-slider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
